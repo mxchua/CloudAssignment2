@@ -151,6 +151,14 @@ myApp.controller('sessionPage', function ($scope, $firebase, $rootScope, $locati
         $location.path("/session");
     };
     
+    $scope.goBack = function(){
+        if($rootScope.userLoggedin === "Chris"){
+            $location.path("/home");
+        }else{
+            $location.path("/stuHome");
+        }
+    }
+    
     $scope.addQuestion = function() {
         var userInputQuestion = $('textarea[name=userInputQuestion]').val();
         console.log(userInputQuestion);
