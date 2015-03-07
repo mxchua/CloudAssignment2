@@ -1,14 +1,44 @@
-<div id="home">
+<!--<div id="home">-->
+ <div class="bs-callout bs-callout-warning" id="callout-fieldset-disabled-pointer-events" style="height:360px; border-left-color: #ffb70d; background-color:white">
     <h2>Quick Start!</h2>
+    <div style="float: right; margin-top:-50px">
+         <img src="http://i.imgur.com/7SxLYYC.png">
+    </div>
+    
     <span>Session Name</span>
-    <input type="text" name="sessionName" class="form-control" placeholder="Module/Class/Lesson Name"/>
+    <input type="text" name="sessionName" class="form-control" size="30" placeholder="Module/Class/Lesson Name"/>
     <span>Use session password to protect your session</span>
     <input type="password" name="sessionPassword1" class="form-control" placeholder="Session Password (Optional)"/>
     <span>Re-enter password</span>
     <input type="password" name="sessionPassword2" class="form-control" placeholder="Re-enter Session Password"/>
     <span style='color:red; font-style: italic; display:none;' class="pwError">Password does not match!</span>
+    
     <button class="btn btn-default pull-right" ng-click="createNewSession()">New Session</button>
 </div>
+
+
+<!--<div id="home">-->
+ <div class="bs-callout bs-callout-warning" id="callout-fieldset-disabled-pointer-events" style="height:270px; border-left-color: #8e8f77; background-color:white">
+  <h2>Join Session</h2>
+    <div style="float: right; margin-top:-50px">
+        <img src="http://i.imgur.com/wWL2sEi.png">
+    </div>
+    <span>Session ID</span>
+    
+    <input type="text" name="userInputSessionID" class="form-control" placeholder="Enter session ID"/>
+    <span>Password (required if session is protected)</span>
+    <input type="password" name="userInputPassword" class="form-control" placeholder="Enter password"/>
+    
+      <button class="btn btn-default pull-right" style="margin-left:10px" onclick="location.href = '#/login';">Logout</button>
+    <button class="btn btn-default pull-right" ng-click="retrieveSession()">Join Session</button>
+   
+    <span style='color:red; font-style: italic; display:none;' class="sessionIDError">Invalid Session ID!</span>
+    <span style='color:red; font-style: italic; display:none;' class="sessionPWError">Invalid Session Password!</span>
+</div>
+
+
+
+
 <!--<div>-->
 <!--            <a href="feedback.html">Click here to leave a feedback</a>-->
 <!--        </div>-->
