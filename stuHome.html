@@ -1,11 +1,24 @@
-<div>
+
+<div class="bs-callout bs-callout-warning" id="callout-helper-context-color-specificity"  style="height:270px; border-left-color: #8e8f77; background-color: white" >
     <h2>Join Session</h2>
     <span>Session ID</span>
+    <div style="float: right; margin-top:-50px">
+       <img src="http://i.imgur.com/wWL2sEi.png"> 
+    </div>
+    
     <input type="text" name="userInputSessionID" class="form-control" placeholder="Enter session ID"/>
     <span>Password (required if session is protected)</span>
     <input type="password" name="userInputPassword" class="form-control" placeholder="Enter password"/>
+    
+      <button class="btn btn-default pull-right" style="margin-left:10px" onclick="location.href = '#/login';">Logout</button>
     <button class="btn btn-default pull-right" ng-click="retrieveSession()">Join Session</button>
+   
     <span style='color:red; font-style: italic; display:none;' class="sessionIDError">Invalid Session ID!</span>
     <span style='color:red; font-style: italic; display:none;' class="sessionPWError">Invalid Session Password!</span>
+    
+   
 
 </div>
+
+
+
