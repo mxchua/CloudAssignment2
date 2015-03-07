@@ -1,6 +1,13 @@
-<div>
-    {{userLoggedin}}
+<div style="display:inline;text-align:left; ">
+    <div style="float: right; margin-top:-5px">
+        <img src="http://i.imgur.com/wWL2sEi.png"> 
+    </div>
+
+   <p class="bg-success" style="width:150px;"><strong> Welcome {{userLoggedin}}</strong> </p> 
+      
+    
     <h3>Session ID: {{selectedSessionID}}</h3> 
+    
     <span style='color:red; font-style: italic; display:none;' class="revoteError">You voted for the question already!</span>
     <div class="panel panel-default" ng-repeat="question in questions">
         <div class="panel-body">
@@ -26,5 +33,7 @@
         <span>Your question</span><br>
         <textarea name="userInputQuestion" cols="185" rows="5"></textarea>
     </div>
+        <button class="btn btn-default pull-right" style="margin-left:10px" ng-click="goBack()">Back to main</button>
     <button class="btn btn-default pull-right" ng-click="addQuestion()">Post Question</button>
+
 </div>
