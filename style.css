@@ -43,6 +43,7 @@ div input{
     text-align: center;
     display: table;
     margin-top:10%;
+    /*background-image: url("chair.jpg");*/
 }
 
 #loginPage table {
